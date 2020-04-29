@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:orientation="horizontal"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"/>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/wordstrans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/miowk-v"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:text="lutti" />
+
+            <TextView
+                android:id="@+id/eng-v"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                tools:text="one" />
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/ic_play_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>
